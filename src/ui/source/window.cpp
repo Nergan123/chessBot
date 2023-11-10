@@ -20,6 +20,9 @@ WindowMine::WindowMine(QWidget *parent)
 
     new QSizeGrip(ui.size_drag_frame);
 
+    QVBoxLayout* layout = new QVBoxLayout(ui.main_frame);
+    layout->addWidget(mainDisplay);
+
     connect(ui.hide, SIGNAL(clicked()), this, SLOT(showMinimized()));
     connect(ui.close, SIGNAL(clicked()), this, SLOT(close()));
     connect(ui.min_max, SIGNAL(clicked()), this, SLOT(restoreMaximize()));

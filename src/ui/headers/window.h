@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../design/ui_untitled.h"
+#include "mainDisplay.h"
 #include <QtWidgets/QMainWindow>
 #include <QGraphicsDropShadowEffect>
 #include <QSizeGrip>
@@ -21,6 +22,8 @@ private:
     int cur_width;
     int new_width;
     
+    MainDisplay *mainDisplay = new MainDisplay();
+
     void mousePressEvent(QMouseEvent* event);
     void mouseMoveEvent(QMouseEvent* event);
 

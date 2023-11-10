@@ -10,19 +10,19 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
 SET(UI_FORMS
-    src/app/design/ui_untitled.ui
+    src/ui/design/ui_untitled.ui
 )
 SET(UI_MOC_HEADERS
-    src/app/headers/window.h
+    src/ui/headers/window.h
 )
 
 find_package(Qt5Widgets REQUIRED)
 
 QT5_WRAP_CPP(UI_WRAPPED_MOC_HEADERS ${UI_MOC_HEADERS})
 QT5_WRAP_UI(UI_FORM_HEADERS ${UI_FORMS})
-qt5_add_resources(UI_RESOURCES_RCC src/app/design/icons.qrc)
+qt5_add_resources(UI_RESOURCES_RCC src/ui/design/icons.qrc)
 
-add_subdirectory(src/app)
+add_subdirectory(src/ui)
 
 add_executable(NerChess src/main.cpp ${UI_RESOURCES_RCC})
-target_link_libraries(NerChess PRIVATE app)
+target_link_libraries(NerChess PRIVATE ui)
