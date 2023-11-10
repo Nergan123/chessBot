@@ -35,7 +35,7 @@ void WindowMine::mousePressEvent(QMouseEvent* event) {
 }
 
 void WindowMine::mouseMoveEvent(QMouseEvent* event) {
-    if (not isFullScreen() and QPoint(event->pos()).y() <= 50) {
+    if (not isFullScreen() and QPoint(event->pos()).y() <= 60) {
         new_pos = QPoint(event->globalPos()) - cur_pos;
         move(x() + new_pos.x(), y() + new_pos.y());
         cur_pos = event->globalPos();

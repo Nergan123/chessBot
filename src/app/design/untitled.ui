@@ -159,7 +159,7 @@ border: None;</string>
                 <item alignment="Qt::AlignHCenter">
                  <widget class="QLabel" name="label_2">
                   <property name="text">
-                   <string>NerVoice</string>
+                   <string>NerChess</string>
                   </property>
                  </widget>
                 </item>
@@ -551,7 +551,7 @@ border: None;</string>
                 </size>
                </property>
                <property name="text">
-                <string>NerVoice v0.1</string>
+                <string>NerChess v0.1</string>
                </property>
               </widget>
              </item>

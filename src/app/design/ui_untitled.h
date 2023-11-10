@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'untitledxrsyXt.ui'
+** Form generated from reading UI file 'untitledRjgQAr.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.15.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UNTITLEDXRSYXT_H
-#define UNTITLEDXRSYXT_H
+#ifndef UNTITLEDRJGQAR_H
+#define UNTITLEDRJGQAR_H
 
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
@@ -348,7 +348,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "NerVoice", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "NerChess", nullptr));
         toolBox->setItemText(toolBox->indexOf(presets_page), QCoreApplication::translate("MainWindow", "Presets", nullptr));
         toolBox->setItemText(toolBox->indexOf(Info_page), QCoreApplication::translate("MainWindow", "Info", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Made by Nergan", nullptr));
@@ -356,7 +356,7 @@ public:
         hide->setText(QString());
         min_max->setText(QString());
         close->setText(QString());
-        version_label->setText(QCoreApplication::translate("MainWindow", "NerVoice v0.1", nullptr));
+        version_label->setText(QCoreApplication::translate("MainWindow", "NerChess v0.1", nullptr));
     } // retranslateUi
 
 };
@@ -367,4 +367,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // UNTITLEDXRSYXT_H
+#endif // UNTITLEDRJGQAR_H
