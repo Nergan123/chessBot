@@ -27,6 +27,7 @@ WindowMine::WindowMine(QWidget *parent)
     connect(ui.close, SIGNAL(clicked()), this, SLOT(close()));
     connect(ui.min_max, SIGNAL(clicked()), this, SLOT(restoreMaximize()));
     connect(ui.pushButton, SIGNAL(clicked()), this, SLOT(slideLeftMenu()));
+    ui.left_frame->setMaximumWidth(0);
 }
 
 WindowMine::~WindowMine()
@@ -58,6 +59,7 @@ void WindowMine::restoreMaximize()
         icon.addFile(QString::fromUtf8(":/icons/icons/minimize-line.svg"), QSize(), QIcon::Normal, QIcon::Off);
         ui.min_max->setIcon(icon);
     }
+    repaint();
 }
 
 void WindowMine::slideLeftMenu(){

@@ -6,6 +6,6 @@
 class Board : public QGraphicsRectItem{
 
 public:
-    Board(int x, int y, QGraphicsItem *parent = nullptr);
+    Board(int x, int y, int dimension, QColor color, QGraphicsItem *parent = nullptr);
 
 };

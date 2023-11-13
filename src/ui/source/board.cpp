@@ -3,10 +3,10 @@
 #include <QGraphicsProxyWidget>
 
 
-Board::Board(int x, int y, QGraphicsItem *parent): QGraphicsRectItem(parent){
-    setRect(x, y, 80, 80);
+Board::Board(int x, int y, int dimension, QColor color, QGraphicsItem *parent): QGraphicsRectItem(parent){
+    setRect(x, y, dimension, dimension);
     QBrush brush;
     brush.setStyle((Qt::SolidPattern));
-    brush.setColor(QColor(55, 51, 63));
+    brush.setColor(color);
     setBrush(brush);
 }
